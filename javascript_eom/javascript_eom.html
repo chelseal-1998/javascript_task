@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <script src="website.js">
+  </script>
+    <link rel="stylesheet" href="styling2.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+  </head>
+  <div id="page">
+  <body style="background-color: lightblue;">
+    <div class="sidebar">
+      <img src="swegga.jpg" />
+    </div>
+    <div class="banner">
+      <img src="delivery.gif" />
+    </div>
+    <div class="navigation">
+      <img src="links.gif" usemap="#mylinks"/>
+
+    
+      <map name="mylinks">
+        <area target="" alt="" title="" href="home.html" coords="7,2,94,37" shape="rect">
+        <area target="" alt="" title="" href="services.html" coords="105,2,192,37" shape="rect">
+        <area target="" alt="" title="" href="products.html" coords="207,4,294,39" shape="rect">
+        <area target="" alt="" title="" href="orderstatus.html" coords="317,1,433,34" shape="rect">
+        <area target="" alt="" title="" href="contactus.html" coords="457,5,549,37" shape="rect">
+
+      </map>
+    </div>
+
+    <table style="width: 50%">
+      <tr>
+        <th>Description</th>
+        <th>Size</th>
+        <th>Color</th>
+        <th>Price</th>
+        <th>Quality</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Female Ski jackets</td>
+        <td><select name="Female jackets" id="Female jackets">
+          <option value="small">small</small></option>
+          <option value="small">medium</small></option>
+          <option value="small">large</small></option>
+        <td><select name="color id="color">
+          <option value="pink">pink</small></option>
+          <option value="white">red</small></option>
+          <option value="black">black</small></option>
+        <td id="ladyprice">R150.95</td>
+        <td><input type="number" id="quantity" name="quantity"></td>
+        <td><input id="ladytotalprice"></td>
+      
+     
+      </tr>
+      <tr>
+        <td>Mens Ski jackets</td>
+        <td><select name="Male jackets" id="Male jackets">
+          <option value="small">small</small></option>
+          <option value="small">medium</small></option>
+          <option value="small">large</small></option>
+        <td><select name="color id="color">
+          <option value="blue">blue</small></option>
+          <option value="white">white</small></option>
+          <option value="black">red</small></option>
+          <td id="mensprice">R180.95</td>
+          <td><input type="number" id="quantity2" name="quantity2"></td>
+          <td><input id="menstotalprice"></td>
+        
+
+        <tr>
+        <td colspan="4">Click to confirm and process your order</td>
+        <td><button type="button" onclick="genders('quantity')">total</button></td>
+        <td><input type="text" id="total">R</td>
+  
+      </tr>
+    </table>
+  
+  </body>
+</html>
